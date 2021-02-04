@@ -1,45 +1,37 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
+import React, { useState } from 'react';
+import Helmet from 'react-helmet';
 
-import Header from '../components/header'
-import './index.css'
-
-const Layout = ({ children, data }) => (
-  <div>
-    <Helmet
-      title={data.site.siteMetadata.title}
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
-      ]}
-    />
-    <Header siteTitle={data.site.siteMetadata.title} />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
-      {children()}
+import Header from '../components/header';
+import Footer from '../components/Footer';
+import GlobalStyle from './GlobalStyles';
+const Layout = ({ children }) => {
+  return (
+    <div>
+      <GlobalStyle />
+      <Helmet
+        title='Akademie | Learn Coding'
+        meta={[
+          {
+            name: 'description',
+            content:
+              'Complete courses about the best tools and design systems. Prototype and build apps with React and Swift. 60 hours of video content and resource materials. No coding experience required.',
+          },
+          {
+            name: 'keywords',
+            content:
+              'Complete courses about the best tools and design systems. Prototype and build apps with React and Swift. 60 hours of video content and resource materials. No coding experience required.',
+          },
+        ]}
+      />
+      <Header />
+      {children}
+      <Footer>
+        Quality development bootcamps and courses on latest technologies. <br></br>
+        <a href='mailto:support@khanweb.io'>Email us</a> to ask anything. ©
+        {new Date().getFullYear()}
+      </Footer>
     </div>
-  </div>
-)
+  );
+};
 
-Layout.propTypes = {
-  children: PropTypes.func,
-}
-
-export default Layout
-
-export const query = graphql`
-  query SiteTitleQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
+export default Layout;
