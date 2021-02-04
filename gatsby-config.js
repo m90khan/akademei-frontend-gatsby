@@ -16,12 +16,5 @@ module.exports = {
         icon: 'src/images/icon.png',
       },
     },
-    {
-      resolve: 'gatsby-source-contentful',
-      options: {
-        spaceId: '6285hcqm6u0o',
-        accessToken: 'O0a6BfzqxN33zEgJmbDme4NitirYwSNjD-e4RhI-k0I',
-      },
-    },
   ],
 };
