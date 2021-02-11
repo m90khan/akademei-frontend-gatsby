@@ -7,7 +7,7 @@ const footerData = [
     ],
   },
   {
-    title: 'Downloads',
+    title: 'Downloads ',
     links: [
       { name: 'iOS UI Kit', link: '/kits' },
       { name: 'Guides', link: '/guides' },
