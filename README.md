@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-  <a href="https://github.com/m90khan/akademei-frontend-gatsby">
+  <a href="https://akademei-frontend-gatsby.vercel.app/">
     <img src="./src\images\logo-code.svg" alt="Logo" width="120" height="120">
   </a>
 
@@ -11,7 +11,7 @@ Udemy clone website <br />
     <a href="m90khan@gmail.com"><strong>Contact Me</strong></a>
     <br />
     <br />
-    <a href="https://github.com/m90khan/akademei-frontend-gatsby">View Demo</a>
+    <a href="https://akademei-frontend-gatsby.vercel.app/">View Demo</a>
     
    </p>
 </p>
@@ -29,8 +29,8 @@ Udemy clone website <br />
 ### About the Project
 
 - It is the test frontend for the learning platform for programming Akademie.
-  https://github.com/m90khan/akademei-frontend-gatsby
-  Live: https://dazzling-mclean-a17029.netlify.app/
+
+  Live: https://akademei-frontend-gatsby.vercel.app/
 
 <img src="./src/images/Akademie-Cover.jpg" >
 
@@ -109,8 +109,8 @@ export default Footer;
 ---
 
 [youtube]: https://www.youtube.com/channel/UC96rVfdTKsjZpREnH6CaCOw
-[twitter]: https://twitter.com/m90khan
+[twitter]: https://twitter.com/uxdkhan
 [linkedin]: https://www.linkedin.com/in/uxdkhan
-[instagram]: https://www.instagram.com/uxd.khan/
+[instagram]: https://www.instagram.com/uxdkhan/
 [behance]: https://www.behance.net/Khan_Mohsin
 [dribble]: https://dribbble.com/uxdkhan
